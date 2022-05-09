@@ -128,12 +128,12 @@ body {
 
 .keyboard__info {
   position: absolute;
-  bottom: 18vh;
+  bottom: 5vh;
   font-size: 42px;
 }
 
 .keyboard__info2 {
   position: absolute;
-  bottom: 13vh;
+  bottom: 1vh;
   font-size: 42px;
 }
