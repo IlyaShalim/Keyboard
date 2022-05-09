@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  transition: 2s;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0 10px;
+}
+
+.keyboard__wrapp {
+  position: relative;
+  order: 2;
+  width: 100%;
+  max-width: 1008px;
+  overflow: hidden;
+  background-color: #e7e7e7;
+}
+
+.row {
+  display: flex;
+}
+
+.key {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  margin: 4px;
+  background-color: #fff;
+  transition: 0.1s;
+}
+
+.key-backspace {
+  width: 120px;
+}
+
+.key-tab {
+  width: 90px;
+}
+
+.key-slash {
+  width: 90px;
+}
+
+.key-caps {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  width: 128px;
+  height: 60px;
+  margin: 4px;
+  background-color: #fff;
+  transition: 0.1s;
+}
+
+.key-enter {
+  width: 120px;
+}
+
+.shift {
+  width: 156px;
+}
+
+.key-space {
+  width: 100%;
+  max-width: 600px;
+}
+
+.text {
+  width: 100%;
+  max-width: 1008px;
+  height: 200px;
+  margin-bottom: 30px;
+  padding-left: 10px;
+  font-size: 26px;
+  background-color: #f7f7f7;
+  border: none;
+  outline: none;
+  transition: 2s;
+}
+
+.key.active {
+  color: #fff;
+  background-color: #333;
+}
+
+.key-caps.active {
+  color: #fff;
+  background-color: #333;
+}
+
+.key.remove {
+  animation: key_animation 0.5s forwards;
+}
+
+@keyframes key_animation {
+  0% {
+    color: #fff;
+    background-color: #333;
+  }
+
+  100% {
+    color: #000;
+    background-color: #fff;
+  }
+}
+
+.keyboard__light {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+
+.keyboard__info {
+  position: absolute;
+  bottom: 18vh;
+  font-size: 42px;
+}
+
+.keyboard__info2 {
+  position: absolute;
+  bottom: 13vh;
+  font-size: 42px;
+}
