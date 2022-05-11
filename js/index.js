@@ -81,7 +81,7 @@ const renderContent = () => {
   const keyboardInfo2 = creatElement(
     'div',
     'keyboard__info2',
-    'Для переключения языка комбинация: Shift + Alt',
+    'Для переключения языка комбинация: Ctrl + Alt',
   );
   const input = document.createElement('textarea');
   input.classList.add('text');
