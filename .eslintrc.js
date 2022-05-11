@@ -40,5 +40,6 @@ module.exports = {
     'no-return-assign': 'off',
     allowForLoopAfterthoughts: 'off',
     'no-param-reassign': 'off',
+    'no-unused-expressions': 'off',
   },
 };
