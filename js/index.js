@@ -237,16 +237,21 @@ const keyUp = (e) => {
 const onClick = (e) => {
   // console.log(readKey.mod);
   const element = e.target;
-
+  document.querySelector('.text').blur();
   if (e.target.textContent === 'Tab') {
     document.querySelector('.text').value += '  ';
   }
   if (e.target.textContent === ' ') {
     document.querySelector('.text').value += ' ';
   }
-  // if (e.target.textContent === 'Enter') {
-  //   document.querySelector('.text').value += '<br/>';
-  // }
+  if (e.target.textContent === 'Enter') {
+    document.querySelector('.text').value += '\n';
+  }
+  if (e.target.textContent === 'Backspace') {
+    const position = document.querySelector('.text').selectionStart;
+    if (position) document.querySelector('.text').setRangeText('', position - 1, position, 'end');
+    return;
+  }
   if (e.target.textContent === 'Shift') {
     shift.forEach((s) => s.classList.add('active'));
     capsLock(key, e.code, { keyname: 'keyname', loverCaseName: 'loverCaseName' });
